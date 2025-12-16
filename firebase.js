@@ -1,0 +1,60 @@
+// firebase.js
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.24.0/firebase-app.js";
+import { 
+  getAuth, 
+  GoogleAuthProvider, 
+  signInWithPopup, 
+  signOut, 
+  onAuthStateChanged 
+} from "https://www.gstatic.com/firebasejs/9.24.0/firebase-auth.js";
+import { 
+  getFirestore, 
+  collection, 
+  addDoc, 
+  getDocs, 
+  query, 
+  where, 
+  orderBy, 
+  serverTimestamp 
+} from "https://www.gstatic.com/firebasejs/9.24.0/firebase-firestore.js";
+import { 
+  getStorage, 
+  ref as sref, 
+  uploadBytes, 
+  getDownloadURL 
+} from "https://www.gstatic.com/firebasejs/9.24.0/firebase-storage.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBHqbuwOBlJBix9SgLFqYSLqFlXs7Uqup8",
+  authDomain: "lost-and-found-17d0e.firebaseapp.com",
+  projectId: "lost-and-found-17d0e",
+  storageBucket: "lost-and-found-17d0e.firebasestorage.app",
+  messagingSenderId: "746918449748",
+  appId: "1:746918449748:web:6de9b7b1a1a68ae91f13c1"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+const db = getFirestore(app);
+const storage = getStorage(app);
+
+export { 
+  auth, 
+  provider, 
+  signInWithPopup, 
+  signOut, 
+  onAuthStateChanged, 
+  db, 
+  collection, 
+  addDoc, 
+  getDocs, 
+  query, 
+  where, 
+  orderBy, 
+  serverTimestamp, 
+  sref, 
+  uploadBytes, 
+  getDownloadURL, 
+  storage 
+};
