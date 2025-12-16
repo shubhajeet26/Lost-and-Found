@@ -24,13 +24,14 @@ import {
   getDownloadURL 
 } from "https://www.gstatic.com/firebasejs/9.24.0/firebase-storage.js";
 
+// YOUR NEW CONFIGURATION
 const firebaseConfig = {
-  apiKey: "AIzaSyBHqbuwOBlJBix9SgLFqYSLqFlXs7Uqup8",
-  authDomain: "lost-and-found-17d0e.firebaseapp.com",
-  projectId: "lost-and-found-17d0e",
-  storageBucket: "lost-and-found-17d0e.firebasestorage.app",
-  messagingSenderId: "746918449748",
-  appId: "1:746918449748:web:6de9b7b1a1a68ae91f13c1"
+  apiKey: "AIzaSyDT5uzoSZ4xtLsTfoSEoPuhJ4Ypfj4azMk",
+  authDomain: "lostandfound-24525.firebaseapp.com",
+  projectId: "lostandfound-24525",
+  storageBucket: "lostandfound-24525.firebasestorage.app",
+  messagingSenderId: "106228672608",
+  appId: "1:106228672608:web:bd6ecb45639969b8ba7b05"
 };
 
 const app = initializeApp(firebaseConfig);
